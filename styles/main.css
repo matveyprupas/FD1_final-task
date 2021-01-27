@@ -1,0 +1,13 @@
+@import "normalize.css";
+
+@import "./ui/container.css";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  padding: 0;
+  /* background: pink; */
+}
