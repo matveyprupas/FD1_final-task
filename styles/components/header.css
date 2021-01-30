@@ -1,4 +1,4 @@
-.header {
+.container {
   background: #070707;
   display: flex;
   justify-content: space-between;
@@ -8,6 +8,12 @@
   margin: 0 auto;
   padding: 1rem 7.5rem;
   box-sizing: border-box;
+  color: #fff;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .header__logo-mobile {
@@ -20,15 +26,11 @@
 }
 
 .header__btn {
-  text-decoration: none;
-  color: #fff;
   margin-right: 50px;
   font-size: 1.25rem;
 }
 
 .header__btn:nth-of-type(3) {
-  /* text-decoration: none;
-    color: #fff; */
   margin: 0 0 0 54px;
   font-size: 1.125rem;
 }
@@ -50,7 +52,7 @@
 }
 
 @media (max-width: 1200px) and (min-width: 768px) {
-  .header {
+  .container {
     padding: 1rem 3.5rem;
   }
 
@@ -66,20 +68,8 @@
   }
 
   .header__burger {
-    /* position: relative;
-    width: 24px;
-    height: 24px; */
     display: inline-block;
   }
-
-  /* .header__burger span {
-    height: 2px;
-    width: 100%;
-    border-radius: 1px;
-    position: absolute;
-    background: #fff;
-    margin: 0 auto;
-  } */
 
   .header__burger span:first-child {
     top: 2px;
@@ -95,7 +85,7 @@
 }
 
 @media (max-width: 767px) {
-  .header {
+  .container {
     padding: 0.75rem 1.25rem;
   }
 
@@ -111,22 +101,13 @@
     display: none;
   }
 
-  .header__btn:last-child {
-    /* display: block; */
-  }
-
   .header__burger {
     display: flex;
     align-items: center;
   }
 
   .header__burger span {
-    /* height: 2px; */
     width: 20px;
-    /* border-radius: 1px;
-    position: absolute;
-    background: #fff;
-    margin: 0 auto; */
     left: 2px;
   }
 

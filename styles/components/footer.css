@@ -1,0 +1,74 @@
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer h3 {
+  font-size: 1.25rem;
+  margin: 50px 0 30px;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer__column {
+  width: 30%;
+}
+
+.footer__social {
+  margin-bottom: 30px;
+}
+
+.footer__social svg {
+  margin-right: 24px;
+}
+
+.footer__column .footer__email:hover {
+  text-decoration: underline;
+}
+
+.footer__column tr {
+  height: 30px;
+}
+
+.footer__column tr td:first-child {
+  padding-right: 15px;
+}
+
+.today {
+  color: #00adef;
+}
+
+.today::after {
+  content: "Сейчас работает";
+  font-size: 0.75rem;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.footer__column .footer__map {
+  color: #00adef;
+  text-decoration: underline;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+.footer__column .footer__map:hover {
+  text-decoration: none;
+}
+
+.footer__text {
+  font-size: 0.75rem;
+  margin-top: 100px;
+  color: #ababab;
+}
+
+.footer__text p:last-child {
+  margin: 20px 0 12px;
+}

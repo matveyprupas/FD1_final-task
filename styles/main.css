@@ -2,6 +2,8 @@
 
 @import "./components/header.css";
 
+@import "./components/footer.css";
+
 @import "./ui/container.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Tinos&display=swap");
@@ -19,4 +21,13 @@ h4,
 h5,
 h6 {
   font-family: "Tinos", serif;
+  font-weight: 400;
+}
+
+.main {
+  height: 200px;
+}
+
+p {
+  margin: 0;
 }
