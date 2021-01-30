@@ -1,13 +1,22 @@
 @import "normalize.css";
 
+@import "./components/header.css";
+
 @import "./ui/container.css";
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Tinos&display=swap");
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 400;
   padding: 0;
-  /* background: pink; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Tinos", serif;
 }

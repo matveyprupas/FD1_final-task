@@ -1,0 +1,144 @@
+.header {
+  background: #070707;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 1rem 7.5rem;
+  box-sizing: border-box;
+}
+
+.header__logo-mobile {
+  display: none;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  text-decoration: none;
+  color: #fff;
+  margin-right: 50px;
+  font-size: 1.25rem;
+}
+
+.header__btn:nth-of-type(3) {
+  /* text-decoration: none;
+    color: #fff; */
+  margin: 0 0 0 54px;
+  font-size: 1.125rem;
+}
+
+.header__burger {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
+.header__burger span {
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  position: absolute;
+  background: #fff;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+  .header {
+    padding: 1rem 3.5rem;
+  }
+
+  .header__btn {
+    margin-right: 25px;
+    font-size: 1.125rem;
+    display: none;
+  }
+
+  .header__btn:nth-of-type(3) {
+    display: inline-block;
+    margin-right: 50px;
+  }
+
+  .header__burger {
+    /* position: relative;
+    width: 24px;
+    height: 24px; */
+    display: inline-block;
+  }
+
+  /* .header__burger span {
+    height: 2px;
+    width: 100%;
+    border-radius: 1px;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto;
+  } */
+
+  .header__burger span:first-child {
+    top: 2px;
+  }
+
+  .header__burger span {
+    top: 12px;
+  }
+
+  .header__burger span:last-child {
+    top: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .header__logo-desktop {
+    display: none;
+  }
+
+  .header__logo-mobile {
+    display: block;
+  }
+
+  .header__btn {
+    display: none;
+  }
+
+  .header__btn:last-child {
+    /* display: block; */
+  }
+
+  .header__burger {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__burger span {
+    /* height: 2px; */
+    width: 20px;
+    /* border-radius: 1px;
+    position: absolute;
+    background: #fff;
+    margin: 0 auto; */
+    left: 2px;
+  }
+
+  .header__burger span:first-child {
+    top: 3px;
+  }
+
+  .header__burger span {
+    top: 12px;
+  }
+
+  .header__burger span:last-child {
+    top: 21px;
+  }
+}
