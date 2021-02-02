@@ -55,6 +55,7 @@
 .footer__column .footer__map {
   color: #00adef;
   text-decoration: underline;
+  font-size: 0.75rem;
   margin-top: 15px;
   display: inline-block;
 }
@@ -71,4 +72,50 @@
 
 .footer__text p:last-child {
   margin: 20px 0 12px;
+}
+
+@media (max-width: 1230px) and (min-width: 768px) {
+  .container {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .footer__column {
+    width: 40%;
+    min-width: 330px;
+  }
+
+  .footer__column h3 {
+    margin: 20px 0;
+  }
+
+  .footer__column:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 0.75rem 1.25rem;
+  }
+
+  .footer__row {
+    flex-direction: column;
+  }
+
+  .footer__column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer__column h3 {
+    margin: 20px 0;
+  }
+
+  .footer__column:nth-child(2) {
+    display: none;
+  }
+
+  .footer__column:last-child h3 {
+    display: none;
+  }
 }
