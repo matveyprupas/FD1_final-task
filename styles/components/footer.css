@@ -1,12 +1,20 @@
-.footer .container {
+.footer__container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  padding: 1rem 7.5rem;
+  box-sizing: border-box;
+  background: #070707;
+  color: #fff;
+}
+
+.footer__container a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer h3 {
   font-size: 1.25rem;
-  margin: 50px 0 30px;
+  margin-bottom: 30px;
 }
 
 .footer__row {
@@ -17,6 +25,7 @@
 
 .footer__column {
   width: 30%;
+  padding-top: 50px;
 }
 
 .footer__social {
@@ -75,8 +84,8 @@
 }
 
 @media (max-width: 1230px) and (min-width: 768px) {
-  .container {
-    padding: 0.75rem 1.25rem;
+  .footer__container {
+    padding: 1rem 3.5rem;
   }
 
   .footer__column {
@@ -94,7 +103,7 @@
 }
 
 @media (max-width: 767px) {
-  .container {
+  .footer__container {
     padding: 0.75rem 1.25rem;
   }
 
