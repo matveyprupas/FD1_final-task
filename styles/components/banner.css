@@ -1,0 +1,95 @@
+.banner__container {
+  color: #fff;
+  box-sizing: border-box;
+  background-image: url(../../img/banner_main-page_2016_mercedes_benz_amg_gt_s-wallpaper-1920x1200.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+}
+
+.banner__container::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  background: linear-gradient(#000, rgba(0, 0, 0, 0));
+  opacity: 0.8;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: calc(100px - 1rem) 0 calc(180px - 1rem);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.banner__content {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner h1 {
+  margin: 20px 0;
+  font-size: 4rem;
+}
+
+.banner p {
+  font-size: 1.5rem;
+  max-width: 820px;
+  line-height: 1.5;
+}
+
+.banner__btn {
+  margin: 34px 0 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  min-width: 220px;
+  padding: 15px 0;
+  background: #000;
+  color: #fff;
+}
+
+@media (max-width: 1230px) and (min-width: 768px) {
+  .banner h1 {
+    font-size: 3.725rem;
+  }
+
+  .banner p {
+    font-size: 1.25rem;
+  }
+
+  .banner__btn {
+    margin: 64px 0 64px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner__container {
+    background-position: bottom 0px left 51.3%;
+  }
+  .banner {
+    padding: 62px 0;
+  }
+
+  .banner h1 {
+    margin: 30px 0;
+    font-size: 2.625rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .banner__btn {
+    margin: 184px 0 0;
+  }
+}
