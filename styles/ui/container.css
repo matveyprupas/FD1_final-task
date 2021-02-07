@@ -5,7 +5,7 @@
   padding: 1rem 7.5rem;
 }
 
-@media (max-width: 1230px) and (min-width: 768px) {
+@media (max-width: 1290px) and (min-width: 768px) {
   .container {
     padding: 1rem 3.5rem;
   }

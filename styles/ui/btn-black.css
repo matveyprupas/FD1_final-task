@@ -1,0 +1,9 @@
+.btn-black {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  min-width: 220px;
+  padding: 15px 0;
+  background: #000;
+  color: #fff;
+}

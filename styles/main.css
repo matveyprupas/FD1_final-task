@@ -4,9 +4,15 @@
 
 @import "./components/banner.css";
 
+@import "./components/article.css";
+
+@import "./components/catalog.css";
+
 @import "./components/footer.css";
 
 @import "./ui/container.css";
+
+@import "./ui/btn-black.css";
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Tinos&display=swap");
 
@@ -25,6 +31,10 @@ h6 {
   font-family: "Tinos", serif;
   font-weight: 400;
   margin: 0;
+}
+
+h2 {
+  font-size: 2.375rem;
 }
 
 /* .main {

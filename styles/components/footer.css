@@ -1,7 +1,6 @@
 .footer__container {
   display: flex;
   flex-direction: column;
-  /* padding: 1rem 7.5rem; */
   box-sizing: border-box;
   background: #070707;
   color: #fff;
@@ -83,11 +82,7 @@
   margin: 20px 0 12px;
 }
 
-@media (max-width: 1230px) and (min-width: 768px) {
-  .footer__container {
-    /* padding: 1rem 3.5rem; */
-  }
-
+@media (max-width: 1290px) and (min-width: 768px) {
   .footer__column {
     width: 40%;
     min-width: 330px;
@@ -103,10 +98,6 @@
 }
 
 @media (max-width: 767px) {
-  .footer__container {
-    /* padding: 0.75rem 1.25rem; */
-  }
-
   .footer__row {
     flex-direction: column;
   }

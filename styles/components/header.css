@@ -3,7 +3,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem 7.5rem; */
   box-sizing: border-box;
   color: #fff;
 }
@@ -48,11 +47,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 1230px) and (min-width: 768px) {
-  .header__container {
-    /* padding: 1rem 3.5rem; */
-  }
-
+@media (max-width: 1290px) and (min-width: 768px) {
   .header__btn {
     margin-right: 25px;
     font-size: 1.125rem;
@@ -82,10 +77,6 @@
 }
 
 @media (max-width: 767px) {
-  .header__container {
-    /* padding: 0.75rem 1.25rem; */
-  }
-
   .header__logo-desktop {
     display: none;
   }
