@@ -24,11 +24,16 @@
 .header__btn {
   margin-right: 50px;
   font-size: 1.25rem;
+  transition: all ease-out 0.2s;
 }
 
 .header__btn:nth-of-type(3) {
   margin: 0 0 0 54px;
   font-size: 1.125rem;
+}
+.header__btn:hover {
+  color: #00adef;
+  transition: all ease-out 0.2s;
 }
 
 .header__burger {

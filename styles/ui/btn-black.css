@@ -7,3 +7,8 @@
   background: #000;
   color: #fff;
 }
+
+.btn-black:hover {
+  background: #646464;
+  transition: all ease-out 0.2s;
+}

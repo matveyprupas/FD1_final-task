@@ -35,8 +35,24 @@
   margin-right: 24px;
 }
 
+.footer__social svg path {
+  /* fill: #00adef; */
+  transition: all ease-out 0.2s;
+}
+
+.footer__social svg:hover path {
+  fill: #00adef;
+  transition: all ease-out 0.2s;
+}
+
+.footer__column .footer__email {
+  transition: all ease-out 0.2s;
+}
+
 .footer__column .footer__email:hover {
   text-decoration: underline;
+  color: #00adef;
+  transition: all ease-out 0.2s;
 }
 
 .footer__column tr {
