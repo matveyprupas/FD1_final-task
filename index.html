@@ -249,12 +249,27 @@
                     </defs>
                 </svg>
             </a>
-            <nav class="header__nav">
-                <a class="header__btn" href="#auto_catalog" title="Auto Catalog"><span>Автомобили</span></a>
-                <a class="header__btn" href="#" title="Test-drive"><span>Запись на тест-драйв</span></a>
-                <a class="header__btn" href="tel:+37517309999" title="Phone number"><span>+375 17 3099999</span></a>
-                <a class="header__burger" href="#" title="burger"><span></span><span></span><span></span></a>
-            </nav>
+            <div class="header__nav-container">
+                <nav class="header__nav">
+                    <a class="header__btn" href="#auto_catalog" title="Auto Catalog">
+                        <span>Автомобили</span>
+                        <span>
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="#BCC1CB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                        </span>
+                        
+                        <!-- <ul>
+                            <li></li>
+                        </ul> -->
+                    </a>
+                    <a class="header__btn" href="#" title="Test-drive"><span>Запись на тест-драйв</span></a>
+                    <hr class="header__borger_hr">
+                    <a class="header__btn" href="tel:+37517309999" title="Phone number"><span>+375 17 3099999</span></a>
+                </nav>
+                <a class="header__burger" href="#" title="burger" onclick="burgerMenu()"><span></span><span></span><span></span></a>
+            </div>
+            
         </div>
     </header>
     <main class="content">
@@ -393,5 +408,6 @@
             </div>
         </div>
     </footer>
+    <script src="./scripts/burger.js"></script>
 </body>
 </html>
