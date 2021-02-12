@@ -25,6 +25,11 @@
   align-items: center;
 }
 
+.header__nav ul {
+  display: none;
+  /* align-items: center; */
+}
+
 .header__btn {
   margin-right: 50px;
   font-size: 1.25rem;
@@ -109,6 +114,8 @@
     margin: 0;
     font-size: 1.5rem;
     margin-bottom: 24px;
+    display: flex;
+    align-items: center;
   }
 
   .header__borger_hr {
@@ -129,6 +136,37 @@
     justify-content: center;
     align-items: center;
     margin-left: 12px;
+  }
+
+  .header__nav ul {
+    display: none;
+  }
+
+  .-list-activated .header__nav ul {
+    display: block;
+    list-style-type: none;
+    margin-bottom: 0;
+  }
+
+  .-list-activated .header__nav ul li {
+    margin-bottom: 24px;
+  }
+
+  .-list-activated .header__nav ul a:hover {
+    color: #00adef;
+  }
+
+  .-list-activated .header__nav .header__btn:nth-of-type(1) {
+    margin: 0;
+  }
+
+  .header__nav .header__btn:nth-of-type(1) svg {
+    transition: all ease-out 0.2s;
+  }
+
+  .-list-activated .header__nav .header__btn:nth-of-type(1) svg {
+    transform: rotate(180deg);
+    transition: all ease-out 0.2s;
   }
 }
 

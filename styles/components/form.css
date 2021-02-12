@@ -1,0 +1,103 @@
+.form,
+.shadow-block {
+  display: none;
+}
+
+.-form-opened {
+  position: relative;
+  overflow: hidden;
+}
+
+.-form-opened .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 64px 236px;
+  max-width: 844px;
+  background: #fff;
+  z-index: 10;
+}
+
+.-form-opened .shadow-block {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.-form-opened .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.-form-opened .form form {
+  width: 376px;
+}
+
+.form h2 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+.form__close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  /* background: pink; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__close span {
+  border: 2px solid #000;
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 112%;
+  display: inline-block;
+  background: #000;
+}
+
+.form__close span:nth-of-type(1) {
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+}
+
+.form__close span:nth-of-type(2) {
+  transform: rotate(-45deg);
+  transform-origin: left top;
+}
+
+.form__input {
+  border: 0;
+  border-bottom: 1px solid #a7b1bd;
+  font-size: 1.25rem;
+  min-width: 280px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  /* height: 46px; */
+}
+
+.form__input::before {
+  content: "Dfit";
+  height: 18px;
+}
+
+.form__input:focus {
+  border-bottom: 1px solid #000;
+}
+
+.form__input:focus:before {
+  content: "Ваше имя";
+  font-size: 0.75px;
+}

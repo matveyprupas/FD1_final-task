@@ -12,6 +12,8 @@
 
 @import "./ui/container.css";
 
+@import "./components/form.css";
+
 @import "./ui/btn-black.css";
 
 body {
