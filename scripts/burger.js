@@ -11,5 +11,10 @@ function openList() {
 function openForm() {
     let top = document.querySelector("header.header").clientHeight;
     document.body.classList.toggle("-form-opened");
-    document.querySelector(".order-form").style.top = `${top}px`;
+    document.querySelector(".form").style.top = `${top}px`;
+}
+
+function hiddenLabel(el) {
+    // console.log(el.classList);
+    el.previousElementSibling.classList.toggle("-is-hidden");
 }

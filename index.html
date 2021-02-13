@@ -16,7 +16,7 @@
     <link rel="preload" href="./styles/main.css" as="style">
     <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body class="-form-opened">
+<body class="">
     <header class="header">
         <div class="container header__container">
             <a class="header__logo" href="./index.html" title="logo">
@@ -348,10 +348,32 @@
         <div class="shadow-block" onclick="openForm()"></div>
         <div class="form">
             <a class="form__close" href="#" onclick="openForm()"><span></span><span></span></a>
-            <h2>Заявка на приз</h2>
+            <h2>Заявка на тест-драйв</h2>
             <form>
-                <input class="form__input" type="text" placeholder="Ваше имя*">
+                <label class="form__label">Ваше имя</label>
+                <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
+                <label class="form__label">Фамилия</label>
+                <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
+                <label class="form__label">Нофелет</label>
+                <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
+                <h3>Выберите класс для тест-драйва</h3>
+                <div class="form__auto">
+                    <input type="button" name="radio__class" value="A-Class Hatchback">
+                    <input type="button" name="radio__class" value="A-Class Sedan">
+                    <input type="button" name="radio__class" value="C-Class">
+                    <input type="button" name="radio__class" value="CLA Coupe">
+                    <input type="button" name="radio__class" value="E-Class">
+                    <input type="button" name="radio__class" value="G-Class">
+                    <input type="button" name="radio__class" value="GLB-Class">
+                    <input type="button" name="radio__class" value="GLE-Class">
+                    <input type="button" name="radio__class" value="GLE Coupe">
+                    <input type="button" name="radio__class" value="S-Class">
+                    <input type="button" name="radio__class" value="V-Class">
+                </div>
+                <input type="submit" title="Send" href="#" class="btn-black" onclick="openForm()"></input>
             </form>
+            
+
         </div>
     </main>
     <footer class="footer">
