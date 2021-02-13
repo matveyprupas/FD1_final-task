@@ -1,0 +1,34 @@
+.main {
+  height: 1500px;
+}
+
+.banner__container_gla {
+  background-image: url(../../img/banner_gla-page.png);
+}
+
+.banner__gla {
+  align-items: flex-start;
+}
+
+.main__nav {
+  display: flex;
+  border-bottom: 2px solid #bcc1cb;
+  margin: 14px 0 0;
+  box-sizing: border-box;
+}
+
+.main__tab {
+  text-decoration: none;
+  color: #71757d;
+  font-size: 1.75rem;
+  margin-right: 140px;
+  margin-bottom: -2px;
+  padding: 16px 0;
+  border-bottom: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.main__tab:focus {
+  color: #000;
+  border-bottom: 2px solid black;
+}
