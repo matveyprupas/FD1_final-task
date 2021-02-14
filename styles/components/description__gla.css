@@ -1,0 +1,110 @@
+.main__nav {
+  display: flex;
+  border-bottom: 3px solid #bcc1cb;
+  margin: 14px 0 0;
+  box-sizing: border-box;
+}
+
+.main__tab {
+  text-decoration: none;
+  color: #71757d;
+  font-size: 1.75rem;
+  margin-right: 140px;
+  margin-bottom: -3px;
+  padding: 16px 0;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+}
+
+/* .main__tab:focus {
+    color: #000;
+    border-bottom: 2px solid black;
+  } */
+
+.main__tab.-tab-active {
+  color: #000;
+  border-bottom: 3px solid black;
+}
+
+.main__about-car {
+  width: 100%;
+  display: flex;
+  margin: 0 0 130px;
+}
+
+.main__about-car:nth-of-type(1) {
+  margin-top: 92px;
+}
+
+.main__about-car img {
+  width: 55%;
+  transform: scale(0.8);
+  transition: all ease-out 0.2s;
+}
+
+.main__about-car:hover img {
+  transform: scale(1);
+}
+
+.main__description-auto {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.main__specific-auto {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: column; */
+}
+
+.main__specific-auto span:nth-of-type(1) {
+  color: #787777;
+}
+
+.main__specific-auto span:nth-of-type(1):after {
+  content: "..................................";
+  width: 50%;
+  color: #cbcbcb;
+  margin: 0 7px;
+  /* border-bottom: 2px dotted #cbcbcb; */
+}
+
+.main__specific-auto:nth-of-type(1) span:nth-of-type(1):after {
+  content: ".................................................";
+}
+
+.main__specific-auto:nth-of-type(2) span:nth-of-type(1):after {
+  content: "............................................";
+}
+
+.main__specific-auto:nth-of-type(4) span:nth-of-type(1):after {
+  content: "...................................................";
+}
+
+.main__price {
+  font-size: 2.375rem;
+  color: #4e4e4e;
+}
+
+.main__price-old {
+  font-size: 1.75rem;
+  text-decoration: line-through;
+  color: #71757d;
+}
+
+.main__offer {
+  display: flex;
+  align-items: center;
+}
+
+.main__offer span {
+  margin-left: 12px;
+  font-size: 1.125rem;
+}
+
+.main__buttons {
+  display: flex;
+  justify-content: space-between;
+  /* text-align: center; */
+}

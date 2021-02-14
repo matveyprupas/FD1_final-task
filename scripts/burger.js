@@ -15,6 +15,15 @@ function openForm() {
 }
 
 function hiddenLabel(el) {
-    // console.log(el.classList);
     el.previousElementSibling.classList.toggle("-is-hidden");
+}
+
+function activeTab(el) {
+    if (el.previousElementSibling) {
+        el.previousElementSibling.classList.remove("-tab-active");
+    }
+    if (el.nextElementSibling){
+        el.nextElementSibling.classList.remove("-tab-active");
+    }
+    el.classList.add("-tab-active");
 }

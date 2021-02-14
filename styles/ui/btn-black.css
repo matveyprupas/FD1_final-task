@@ -1,6 +1,7 @@
 .btn-black {
   text-decoration: none;
   text-transform: uppercase;
+  text-align: center;
   font-size: 1.125rem;
   min-width: 220px;
   padding: 15px 0;
@@ -11,4 +12,15 @@
 .btn-black:hover {
   background: #646464;
   transition: all ease-out 0.2s;
+}
+
+.btn-border {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+
+  font-size: 1.125rem;
+  min-width: 220px;
+  padding: 15px 0;
+  border: 1px solid black;
 }

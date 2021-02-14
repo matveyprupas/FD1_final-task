@@ -100,11 +100,6 @@
   opacity: 1;
 }
 
-.form__input:focus:before {
-  content: "Ваше имя";
-  font-size: 0.75px;
-}
-
 .form__auto input {
   padding: 12px;
   margin: 6px;

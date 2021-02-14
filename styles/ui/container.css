@@ -3,6 +3,7 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 1rem 7.5rem;
+  box-sizing: border-box;
 }
 
 @media (max-width: 1290px) and (min-width: 768px) {

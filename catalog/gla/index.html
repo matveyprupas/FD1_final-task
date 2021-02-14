@@ -290,13 +290,52 @@
             </div>
         </div>
         <div class="container">
-            <nav class="main__nav">
-                <a class="main__tab" href="#">Авто в продаже</a>
-                <a class="main__tab" href="#">Описание класса</a>
-                <a class="main__tab" href="#">Видео</a>
-
+            <nav class="main__nav" id="main__nav">
+                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Авто в продаже</a>
+                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Описание класса</a>
+                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Видео</a>
             </nav>
+            <div class="main__about-car">
+                <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                <div class="main__description-auto">
+                    <h2>GLA 200</h2>
+                    <div class="main__specific-auto">
+                        <span>Двигатель, куб. см.:</span>
+                        <span>1332</span>
+                    </div>
+                    <div class="main__specific-auto">
+                        <span>Мощность:</span>
+                        <span>120кВт (163 л.с.)</span>
+                    </div>
+                    <div class="main__specific-auto">
+                        <span>Расход (смешанный), л./100 км.:</span>
+                        <span>6</span>
+                    </div>
+                    <div class="main__specific-auto">
+                        <span>Разгон 0-100 км/ч, с:</span>
+                        <span>8,7</span>
+                    </div>
+                    <div class="main__price">
+                        <span>40 123 €</span>
+                        <span class="main__price-old">42 702 €</span>
+                    </div>
+                    <div class="main__offer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Скачать предложение</span>
+                    </div>
+                    <div class="main__buttons">
+                        <a title="Order" href="#" class="btn-border" onclick="openForm()">Подробнее</a>
+                        <a title="Order" href="#" class="btn-black" onclick="">Заказать</a>
+
+                    </div>
+                </div>
+            </div>
         </div>
+
 
     </main>
     <footer class="footer">
