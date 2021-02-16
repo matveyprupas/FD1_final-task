@@ -19,11 +19,29 @@ function hiddenLabel(el) {
 }
 
 function activeTab(el) {
-    if (el.previousElementSibling) {
-        el.previousElementSibling.classList.remove("-tab-active");
+    let tabs = document.querySelectorAll("a.main__tab");
+    let aboutCar = document.querySelectorAll("div.main__about-car");
+
+    for (let i = 0; i < aboutCar.length; i++) {
+        aboutCar[i].classList.add("-main__about-car_hidden");
     }
-    if (el.nextElementSibling){
-        el.nextElementSibling.classList.remove("-tab-active");
+
+    for (let i = 0; i < tabs.length; i++) {
+        if (tabs[i] == el) {
+            aboutCar[i].classList.remove("-main__about-car_hidden");
+        }
+        tabs[i].classList.remove("-tab-active");
     }
     el.classList.add("-tab-active");
 }
+
+function todayDate() {
+    let today = new Date();
+    today = today.getDay();
+    if (today == 0) {
+        document.querySelector(`.footer__column tr:nth-of-type(7)`).classList.add("today");
+        return;
+    }
+    document.querySelector(`.footer__column tr:nth-of-type(${today})`).classList.add("today");
+}
+todayDate();

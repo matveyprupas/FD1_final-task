@@ -291,48 +291,237 @@
         </div>
         <div class="container">
             <nav class="main__nav" id="main__nav">
-                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Авто в продаже</a>
-                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Описание класса</a>
-                <a class="main__tab" href="#main__nav" onclick="activeTab(this)">Видео</a>
+                <a class="main__tab -tab-active" onclick="activeTab(this)">Авто в продаже</a>
+                <a class="main__tab" onclick="activeTab(this)">Описание класса</a>
+                <a class="main__tab" onclick="activeTab(this)">Видео</a>
             </nav>
-            <div class="main__about-car">
-                <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
-                <div class="main__description-auto">
-                    <h2>GLA 200</h2>
-                    <div class="main__specific-auto">
-                        <span>Двигатель, куб. см.:</span>
-                        <span>1332</span>
-                    </div>
-                    <div class="main__specific-auto">
-                        <span>Мощность:</span>
-                        <span>120кВт (163 л.с.)</span>
-                    </div>
-                    <div class="main__specific-auto">
-                        <span>Расход (смешанный), л./100 км.:</span>
-                        <span>6</span>
-                    </div>
-                    <div class="main__specific-auto">
-                        <span>Разгон 0-100 км/ч, с:</span>
-                        <span>8,7</span>
-                    </div>
-                    <div class="main__price">
-                        <span>40 123 €</span>
-                        <span class="main__price-old">42 702 €</span>
-                    </div>
-                    <div class="main__offer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        <span>Скачать предложение</span>
-                    </div>
-                    <div class="main__buttons">
-                        <a title="Order" href="#" class="btn-border" onclick="openForm()">Подробнее</a>
-                        <a title="Order" href="#" class="btn-black" onclick="">Заказать</a>
-
+            <div class="main__car-for-sale_container main__about-car">
+                <div class="main__car-for-sale">
+                    <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                    <div class="main__description-auto">
+                        <h2>GLA 200</h2>
+                        <div class="main__specific-auto">
+                            <span>Двигатель, куб. см.:</span>
+                            <span>1332</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Мощность:</span>
+                            <span>120кВт (163 л.с.)</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Расход (смешанный), л./100 км.:</span>
+                            <span>6</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Разгон 0-100 км/ч, с:</span>
+                            <span>8,7</span>
+                        </div>
+                        <div class="main__price">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
+                        <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Скачать предложение</span>
+                        </a>
+                        <div class="main__buttons">
+                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                        </div>
                     </div>
                 </div>
+                <div class="main__car-for-sale">
+                    <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                    <div class="main__description-auto">
+                        <h2>GLA 200</h2>
+                        <div class="main__specific-auto">
+                            <span>Двигатель, куб. см.:</span>
+                            <span>1332</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Мощность:</span>
+                            <span>120кВт (163 л.с.)</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Расход (смешанный), л./100 км.:</span>
+                            <span>6</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Разгон 0-100 км/ч, с:</span>
+                            <span>8,7</span>
+                        </div>
+                        <div class="main__price">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
+                        <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Скачать предложение</span>
+                        </a>
+                        <div class="main__buttons">
+                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="main__car-for-sale">
+                    <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                    <div class="main__description-auto">
+                        <h2>GLA 200</h2>
+                        <div class="main__specific-auto">
+                            <span>Двигатель, куб. см.:</span>
+                            <span>1332</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Мощность:</span>
+                            <span>120кВт (163 л.с.)</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Расход (смешанный), л./100 км.:</span>
+                            <span>6</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Разгон 0-100 км/ч, с:</span>
+                            <span>8,7</span>
+                        </div>
+                        <div class="main__price">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
+                        <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Скачать предложение</span>
+                        </a>
+                        <div class="main__buttons">
+                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="main__car-for-sale">
+                    <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                    <div class="main__description-auto">
+                        <h2>GLA 200</h2>
+                        <div class="main__specific-auto">
+                            <span>Двигатель, куб. см.:</span>
+                            <span>1332</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Мощность:</span>
+                            <span>120кВт (163 л.с.)</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Расход (смешанный), л./100 км.:</span>
+                            <span>6</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Разгон 0-100 км/ч, с:</span>
+                            <span>8,7</span>
+                        </div>
+                        <div class="main__price">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
+                        <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Скачать предложение</span>
+                        </a>
+                        <div class="main__buttons">
+                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__car-for-sale">
+                    <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
+                    <div class="main__description-auto">
+                        <h2>GLA 200</h2>
+                        <div class="main__specific-auto">
+                            <span>Двигатель, куб. см.:</span>
+                            <span>1332</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Мощность:</span>
+                            <span>120кВт (163 л.с.)</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Расход (смешанный), л./100 км.:</span>
+                            <span>6</span>
+                        </div>
+                        <div class="main__specific-auto">
+                            <span>Разгон 0-100 км/ч, с:</span>
+                            <span>8,7</span>
+                        </div>
+                        <div class="main__price">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
+                        <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Скачать предложение</span>
+                        </a>
+                        <div class="main__buttons">
+                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__car-description main__about-car -main__about-car_hidden">
+                <div class="main__destription-item">
+                    <div class="main__destription-text">
+                        <h2>Повышает комфорт на все 360°</h2>
+                        <p>При парковании или маневрировании – четыре связанные между собой камеры предлагают по желанию реалистичное круговое отображение окружения. Меньше забот, больше впечатлений.</p>
+                    </div>
+                    <img title="Interier GLA" alt="Interior GLA" src="../../img/about-car-1.webp">
+                </div>
+                <div class="main__destription-item">
+                    <img title="GLA in move" alt="GLA in move" src="../../img/about-car-2.webp">
+                    <div class="main__destription-text">
+                        <h2>Рвется в путь</h2>
+                        <p>Больше тяги, больше стабильности и еще больше возможностей на асфальте и за его пределами: полный привод 4MATIC готов к любому приключению и предлагается для множества двигателей.</p>
+                    </div>
+                </div>
+                <div class="main__destription-item">
+                    <div class="main__destription-text">
+                        <h2>Много загрузить. И еще больше открыть для себя</h2>
+                        <p>От больших закупок до больших путешествий – новый GLA готов к любому приключению. По желанию вы можете открыть багажное отделение нажатием на кнопку или даже одним движением ноги</p>
+                    </div>
+                    <img title="Tailback GLA" alt="Tailback GLA" src="../../img/about-car-3.webp">
+                </div>
+                <a class="main__offer" title="Matusha's resume" href="https://rabota.by/resume/43ba318fff07909c7a0039ed1f643664626a52" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7 10L12 15L17 10" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 15V3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Скачать подробную информацию об авто</span>
+                </a>
+            </div>
+            <div class="main__video-car main__about-car -main__about-car_hidden">
+                <iframe src="https://www.youtube.com/embed/ovIvuiaMIN8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
 
@@ -371,7 +560,7 @@
                             <td>Понедельник</td>
                             <td>08:00 - 20:00</td>
                         </tr>
-                        <tr class="today">
+                        <tr class="">
                             <td>Вторник</td>
                             <td>08:00 - 20:00</td>
                         </tr>
