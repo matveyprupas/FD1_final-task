@@ -36,11 +36,11 @@
   transition: all ease-out 0.2s;
 }
 
-.header__btn:nth-of-type(1) span:last-child {
+.header__btn-mobile {
   display: none;
 }
 
-.header__btn:nth-of-type(3) {
+.header__btn:nth-of-type(4) {
   margin: 0 0 0 54px;
   font-size: 1.125rem;
 }
@@ -125,7 +125,12 @@
     margin: 0 0 24px;
   }
 
-  .-burger-activated .header__btn:nth-of-type(3) {
+  .-burger-activated .header__btn-desktop,
+  .header__btn-desktop {
+    display: none;
+  }
+
+  .-burger-activated .header__btn:nth-of-type(4) {
     color: #bcc1cb;
   }
 

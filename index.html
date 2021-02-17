@@ -251,6 +251,9 @@
             </a>
             <div class="header__nav-container">
                 <nav class="header__nav">
+                    <a class="header__btn header__btn-desktop" href="#auto_catalog" title="Auto Catalog" onclick="openList()">
+                        <span>Автомобили</span>
+                    </a>
                     <a class="header__btn header__btn-mobile" href="#" title="Auto Catalog" onclick="openList()">
                         <span>Автомобили</span>
                         <span>
@@ -346,35 +349,55 @@
             </div>
         </div>
         <div class="shadow-block" onclick="openForm()"></div>
-        <div class="form">
+        <form class="form">
             <a class="form__close" href="#" onclick="openForm()"><span></span><span></span></a>
             <h2>Заявка на тест-драйв</h2>
-            <form>
-                <label class="form__label">Ваше имя</label>
-                <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
-                <label class="form__label">Фамилия</label>
-                <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
-                <label class="form__label">Нофелет</label>
-                <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
-                <h3>Выберите класс для тест-драйва</h3>
-                <div class="form__auto">
-                    <input type="button" name="radio__class" value="A-Class Hatchback">
-                    <input type="button" name="radio__class" value="A-Class Sedan">
-                    <input type="button" name="radio__class" value="C-Class">
-                    <input type="button" name="radio__class" value="CLA Coupe">
-                    <input type="button" name="radio__class" value="E-Class">
-                    <input type="button" name="radio__class" value="G-Class">
-                    <input type="button" name="radio__class" value="GLB-Class">
-                    <input type="button" name="radio__class" value="GLE-Class">
-                    <input type="button" name="radio__class" value="GLE Coupe">
-                    <input type="button" name="radio__class" value="S-Class">
-                    <input type="button" name="radio__class" value="V-Class">
-                </div>
-                <input type="submit" title="Send" href="#" class="btn-black" onclick="openForm()"></input>
-            </form>
-            
+            <label class="form__label">Ваше имя</label>
+            <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
+            <label class="form__label">Фамилия</label>
+            <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
+            <label class="form__label">Нофелет</label>
+            <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
+            <h3>Выберите класс для тест-драйва</h3>
+            <div class="form__auto">
+                <input type="radio" id="radioAHatch" name="radioClassAuto" value="AHatch" checked>
+                <label for="radioAHatch">A-Class Hatchback</label>
 
-        </div>
+                <input type="radio" id="radioASedan" name="radioClassAuto" value="ASedan">
+                <label for="radioASedan">A-Class Sedan</label>
+
+                <input type="radio" id="radioC" name="radioClassAuto" value="C">
+                <label for="radioC">C-Class</label> 
+
+                <input type="radio" id="radioCLA" name="radioClassAuto" value="CLA">
+                <label for="radioCLA">CLA Coupe</label> 
+
+                <input type="radio" id="radioE" name="radioClassAuto" value="E">
+                <label for="radioE">E-Class</label> 
+
+                <input type="radio" id="radioG" name="radioClassAuto" value="G">
+                <label for="radioG">G-Class</label> 
+
+                <input type="radio" id="radioGLA" name="radioClassAuto" value="GLA">
+                <label for="radioGLA">GLA-Class</label> 
+
+                <input type="radio" id="radioGLB" name="radioClassAuto" value="GLB">
+                <label for="radioGLB">GLB-Class</label> 
+
+                <input type="radio" id="radioGLE" name="radioClassAuto" value="GLE">
+                <label for="radioGLE">GLE-Class</label> 
+
+                <input type="radio" id="radioGLECoupe" name="radioClassAuto" value="GLECoupe">
+                <label for="radioGLECoupe">GLE Coupe</label> 
+
+                <input type="radio" id="radioS" name="radioClassAuto" value="S">
+                <label for="radioS">S-Class</label> 
+
+                <input type="radio" id="radioV" name="radioClassAuto" value="V">
+                <label for="radioV">V-Class</label> 
+            </div>
+            <input type="submit" title="Send" class="btn-black" onclick="openForm()"></input>
+        </form>
     </main>
     <footer class="footer">
         <div class="container footer__container">
