@@ -20,6 +20,10 @@
 
 @import "./ui/btn-black.css";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;

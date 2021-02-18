@@ -16,6 +16,24 @@
   box-sizing: border-box;
 }
 
+.main__tab:nth-of-type(1):before {
+  content: "Авто в продаже";
+}
+
+.main__tab:nth-of-type(1):after {
+  content: "Авто";
+  display: none;
+}
+
+.main__tab:nth-of-type(2):before {
+  content: "Описание класса";
+}
+
+.main__tab:nth-of-type(2):after {
+  content: "Описание";
+  display: none;
+}
+
 .main__tab:hover {
   cursor: pointer;
 }
@@ -72,28 +90,17 @@
   margin-bottom: 10px;
 }
 
+.main__specific-auto span {
+  white-space: nowrap;
+}
+
 .main__specific-auto span:nth-of-type(1) {
   color: #787777;
 }
 
-.main__specific-auto span:nth-of-type(1):after {
-  content: "...............................................................";
-  width: 50%;
-  color: #cbcbcb;
-  margin: 0 7px;
-  /* border-bottom: 2px dotted #cbcbcb; */
-}
-
-.main__specific-auto:nth-of-type(1) span:nth-of-type(1):after {
-  content: "..............................................................................";
-}
-
-.main__specific-auto:nth-of-type(2) span:nth-of-type(1):after {
-  content: ".........................................................................";
-}
-
-.main__specific-auto:nth-of-type(4) span:nth-of-type(1):after {
-  content: "...............................................................................";
+.main__specific-auto span:nth-of-type(2) {
+  width: 100%;
+  border-bottom: 2px dotted #cbcbcb;
 }
 
 .main__price {
@@ -106,6 +113,10 @@
   font-size: 1.75rem;
   text-decoration: line-through;
   color: #71757d;
+}
+
+.main__price_mobile {
+  display: none;
 }
 
 .main__offer {
@@ -122,6 +133,10 @@
   display: flex;
   justify-content: space-between;
   margin-top: 16px;
+}
+
+.main__buttons .btn-border:hover {
+  font-weight: 700;
 }
 
 .main__buttons .btn-black {
@@ -179,4 +194,110 @@
 
 .main__car-description .main__offer {
   margin-bottom: 255px;
+}
+
+@media (max-width: 1290px) {
+  .main__nav {
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .main__tab {
+    margin: 0 0 -3px;
+  }
+
+  .main__tab:nth-of-type(1):before {
+    display: none;
+  }
+
+  .main__tab:nth-of-type(1):after {
+    display: inline-block;
+  }
+
+  .main__tab:nth-of-type(2):before {
+    display: none;
+  }
+
+  .main__tab:nth-of-type(2):after {
+    display: inline-block;
+  }
+
+  .main__car-for-sale {
+    flex-direction: column;
+  }
+
+  .main__car-for-sale img {
+    width: 100%;
+    transform: scale(0.8);
+  }
+
+  .main__description-auto {
+    width: 100%;
+  }
+
+  .main__description-auto h2 {
+    margin: 16px 0;
+  }
+
+  .main__price_mobile {
+    display: block;
+  }
+
+  .main__price_desktop {
+    display: none;
+  }
+
+  .main__specific-auto {
+    margin-bottom: 14px;
+  }
+
+  .main__offer {
+    margin: 24px;
+    align-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__tab {
+    font-size: 1.5rem;
+  }
+
+  .main__buttons .btn-black,
+  .main__buttons .btn-border {
+    min-width: 150px;
+  }
+
+  .main__car-for-sale img {
+    transform: scale(1);
+  }
+
+  .main__destription-item {
+    flex-direction: column;
+    margin: 48px 0;
+  }
+
+  .main__destription-item:nth-of-type(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .main__destription-item:last-of-type {
+    margin-bottom: 62px;
+  }
+
+  .main__destription-item img,
+  .main__destription-text {
+    width: 100%;
+  }
+
+  .main__destription-text h2 {
+    font-size: 2rem;
+    margin: 24px 0;
+  }
+
+  .main__destription-text p {
+    font-size: 1rem;
+  }
+  .main__offer {
+    display: none;
+  }
 }

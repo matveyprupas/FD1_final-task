@@ -15,7 +15,7 @@ function openForm() {
 }
 
 function hiddenLabel(el) {
-    el.previousElementSibling.classList.toggle("-is-hidden");
+    // el.previousElementSibling.classList.toggle("-is-hidden");
 }
 
 function activeTab(el) {
@@ -45,3 +45,4 @@ function todayDate() {
     document.querySelector(`.footer__column tr:nth-of-type(${today})`).classList.add("today");
 }
 todayDate();
+

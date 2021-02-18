@@ -263,17 +263,17 @@
                         </span>
                     </a>
                     <ul>
-                        <li><a href="#">A-Class Hatchback</a></li>
-                        <li><a href="#">A-Class Sedan</a></li>
-                        <li><a href="#">C-Class</a></li>
-                        <li><a href="#">CLA Coupe</a></li>
-                        <li><a href="#">E-Class</a></li>
-                        <li><a href="#">G-Class</a></li>
-                        <li><a href="#">GLB-Class</a></li>
-                        <li><a href="#">GLE-class</a></li>
-                        <li><a href="#">GLE Coupe</a></li>
-                        <li><a href="#">S-Class</a></li>
-                        <li><a href="#">V-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">A-Class Hatchback</a></li>
+                        <li><a href="./catalog/gla/index.html">A-Class Sedan</a></li>
+                        <li><a href="./catalog/gla/index.html">C-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">CLA Coupe</a></li>
+                        <li><a href="./catalog/gla/index.html">E-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">G-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">GLB-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">GLE-class</a></li>
+                        <li><a href="./catalog/gla/index.html">GLE Coupe</a></li>
+                        <li><a href="./catalog/gla/index.html">S-Class</a></li>
+                        <li><a href="./catalog/gla/index.html">V-Class</a></li>
                     </ul>
                     <a class="header__btn" href="#" title="Test-drive" onclick="openForm()"><span>Запись на тест-драйв</span></a>
                     <hr class="header__borger_hr">
@@ -352,12 +352,19 @@
         <form class="form">
             <a class="form__close" href="#" onclick="openForm()"><span></span><span></span></a>
             <h2>Заявка на тест-драйв</h2>
-            <label class="form__label">Ваше имя</label>
-            <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
-            <label class="form__label">Фамилия</label>
-            <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
-            <label class="form__label">Нофелет</label>
-            <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
+            <div class="form__input-container">
+                <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
+                <label class="form__label">Ваше имя</label>
+            </div>
+            <div class="form__input-container">
+                <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
+                <label class="form__label">Фамилия</label>
+            </div>
+            <div class="form__input-container">
+                <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
+                <label class="form__label">Нофелет</label>
+            </div>
+    
             <h3>Выберите класс для тест-драйва</h3>
             <div class="form__auto">
                 <input type="radio" id="radioAHatch" name="radioClassAuto" value="AHatch" checked>

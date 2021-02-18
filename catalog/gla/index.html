@@ -251,7 +251,10 @@
             </a>
             <div class="header__nav-container">
                 <nav class="header__nav">
-                    <a class="header__btn" href="#" title="Auto Catalog" onclick="openList()">
+                    <a class="header__btn header__btn-desktop" href="../../index.html#auto_catalog" title="Auto Catalog" onclick="openList()">
+                        <span>Автомобили</span>
+                    </a>
+                    <a class="header__btn header__btn-mobile" href="#" title="Auto Catalog" onclick="openList()">
                         <span>Автомобили</span>
                         <span>
                             <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,17 +263,17 @@
                         </span>
                     </a>
                     <ul>
-                        <li><a href="#">A-Class Hatchback</a></li>
-                        <li><a href="#">A-Class Sedan</a></li>
-                        <li><a href="#">C-Class</a></li>
-                        <li><a href="#">CLA Coupe</a></li>
-                        <li><a href="#">E-Class</a></li>
-                        <li><a href="#">G-Class</a></li>
-                        <li><a href="#">GLB-Class</a></li>
-                        <li><a href="#">GLE-class</a></li>
-                        <li><a href="#">GLE Coupe</a></li>
-                        <li><a href="#">S-Class</a></li>
-                        <li><a href="#">V-Class</a></li>
+                        <li><a href="./index.html">A-Class Hatchback</a></li>
+                        <li><a href="./index.html">A-Class Sedan</a></li>
+                        <li><a href="./index.html">C-Class</a></li>
+                        <li><a href="./index.html">CLA Coupe</a></li>
+                        <li><a href="./index.html">E-Class</a></li>
+                        <li><a href="./index.html">G-Class</a></li>
+                        <li><a href="./index.html">GLB-Class</a></li>
+                        <li><a href="./index.html">GLE-class</a></li>
+                        <li><a href="./index.html">GLE Coupe</a></li>
+                        <li><a href="./index.html">S-Class</a></li>
+                        <li><a href="./index.html">V-Class</a></li>
                     </ul>
                     <a class="header__btn" href="#" title="Test-drive" onclick="openForm()"><span>Запись на тест-драйв</span></a>
                     <hr class="header__borger_hr">
@@ -291,8 +294,8 @@
         </div>
         <div class="container">
             <nav class="main__nav" id="main__nav">
-                <a class="main__tab -tab-active" onclick="activeTab(this)">Авто в продаже</a>
-                <a class="main__tab" onclick="activeTab(this)">Описание класса</a>
+                <a class="main__tab -tab-active" onclick="activeTab(this)"></a>
+                <a class="main__tab" onclick="activeTab(this)"></a>
                 <a class="main__tab" onclick="activeTab(this)">Видео</a>
             </nav>
             <div class="main__car-for-sale_container main__about-car">
@@ -300,23 +303,31 @@
                     <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
                     <div class="main__description-auto">
                         <h2>GLA 200</h2>
+                        <div class="main__price main__price_mobile">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
                         <div class="main__specific-auto">
                             <span>Двигатель, куб. см.:</span>
+                            <span></span>
                             <span>1332</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Мощность:</span>
+                            <span></span>
                             <span>120кВт (163 л.с.)</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Расход (смешанный), л./100 км.:</span>
+                            <span></span>
                             <span>6</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Разгон 0-100 км/ч, с:</span>
+                            <span></span>
                             <span>8,7</span>
                         </div>
-                        <div class="main__price">
+                        <div class="main__price main__price_desktop">
                             <span>40 123 €</span>
                             <span class="main__price-old">42 702 €</span>
                         </div>
@@ -329,8 +340,8 @@
                             <span>Скачать предложение</span>
                         </a>
                         <div class="main__buttons">
-                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
-                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                            <a title="Order" class="btn-border" href="" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" href=""  onclick="openForm()">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -338,23 +349,31 @@
                     <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
                     <div class="main__description-auto">
                         <h2>GLA 200</h2>
+                        <div class="main__price main__price_mobile">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
                         <div class="main__specific-auto">
                             <span>Двигатель, куб. см.:</span>
+                            <span></span>
                             <span>1332</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Мощность:</span>
+                            <span></span>
                             <span>120кВт (163 л.с.)</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Расход (смешанный), л./100 км.:</span>
+                            <span></span>
                             <span>6</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Разгон 0-100 км/ч, с:</span>
+                            <span></span>
                             <span>8,7</span>
                         </div>
-                        <div class="main__price">
+                        <div class="main__price main__price_desktop">
                             <span>40 123 €</span>
                             <span class="main__price-old">42 702 €</span>
                         </div>
@@ -367,9 +386,8 @@
                             <span>Скачать предложение</span>
                         </a>
                         <div class="main__buttons">
-                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
-                            <a title="Order" class="btn-black" onclick="">Заказать</a>
-    
+                            <a title="Order" class="btn-border" href="" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" href="" onclick="openForm()">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -377,23 +395,31 @@
                     <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
                     <div class="main__description-auto">
                         <h2>GLA 200</h2>
+                        <div class="main__price main__price_mobile">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
                         <div class="main__specific-auto">
                             <span>Двигатель, куб. см.:</span>
+                            <span></span>
                             <span>1332</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Мощность:</span>
+                            <span></span>
                             <span>120кВт (163 л.с.)</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Расход (смешанный), л./100 км.:</span>
+                            <span></span>
                             <span>6</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Разгон 0-100 км/ч, с:</span>
+                            <span></span>
                             <span>8,7</span>
                         </div>
-                        <div class="main__price">
+                        <div class="main__price main__price_desktop">
                             <span>40 123 €</span>
                             <span class="main__price-old">42 702 €</span>
                         </div>
@@ -406,9 +432,8 @@
                             <span>Скачать предложение</span>
                         </a>
                         <div class="main__buttons">
-                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
-                            <a title="Order" class="btn-black" onclick="">Заказать</a>
-    
+                            <a title="Order" class="btn-border" href="" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" href="" onclick="openForm()">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -416,23 +441,31 @@
                     <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
                     <div class="main__description-auto">
                         <h2>GLA 200</h2>
+                        <div class="main__price main__price_mobile">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
                         <div class="main__specific-auto">
                             <span>Двигатель, куб. см.:</span>
+                            <span></span>
                             <span>1332</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Мощность:</span>
+                            <span></span>
                             <span>120кВт (163 л.с.)</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Расход (смешанный), л./100 км.:</span>
+                            <span></span>
                             <span>6</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Разгон 0-100 км/ч, с:</span>
+                            <span></span>
                             <span>8,7</span>
                         </div>
-                        <div class="main__price">
+                        <div class="main__price main__price_desktop">
                             <span>40 123 €</span>
                             <span class="main__price-old">42 702 €</span>
                         </div>
@@ -445,8 +478,8 @@
                             <span>Скачать предложение</span>
                         </a>
                         <div class="main__buttons">
-                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
-                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                            <a title="Order" class="btn-border" href="" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" href="" onclick="openForm()">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -454,23 +487,31 @@
                     <img title="GLA 200" alt="GLA 200" src="../../img/gla_class_catalog.webp">
                     <div class="main__description-auto">
                         <h2>GLA 200</h2>
+                        <div class="main__price main__price_mobile">
+                            <span>40 123 €</span>
+                            <span class="main__price-old">42 702 €</span>
+                        </div>
                         <div class="main__specific-auto">
                             <span>Двигатель, куб. см.:</span>
+                            <span></span>
                             <span>1332</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Мощность:</span>
+                            <span></span>
                             <span>120кВт (163 л.с.)</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Расход (смешанный), л./100 км.:</span>
+                            <span></span>
                             <span>6</span>
                         </div>
                         <div class="main__specific-auto">
                             <span>Разгон 0-100 км/ч, с:</span>
+                            <span></span>
                             <span>8,7</span>
                         </div>
-                        <div class="main__price">
+                        <div class="main__price main__price_desktop">
                             <span>40 123 €</span>
                             <span class="main__price-old">42 702 €</span>
                         </div>
@@ -483,8 +524,8 @@
                             <span>Скачать предложение</span>
                         </a>
                         <div class="main__buttons">
-                            <a title="Order" class="btn-border" onclick="">Подробнее</a>
-                            <a title="Order" class="btn-black" onclick="">Заказать</a>
+                            <a title="Order" class="btn-border" href="" onclick="">Подробнее</a>
+                            <a title="Order" class="btn-black" href="" onclick="openForm()">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -526,35 +567,62 @@
         </div>
 
         <div class="shadow-block" onclick="openForm()"></div>
-        <div class="form">
+        <form class="form">
             <a class="form__close" href="#" onclick="openForm()"><span></span><span></span></a>
             <h2>Заявка на тест-драйв</h2>
-            <form>
-                <label class="form__label">Ваше имя</label>
+            <div class="form__input-container">
                 <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
-                <label class="form__label">Фамилия</label>
+                <label class="form__label">Ваше имя</label>
+            </div>
+            <div class="form__input-container">
                 <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
-                <label class="form__label">Нофелет</label>
+                <label class="form__label">Фамилия</label>
+            </div>
+            <div class="form__input-container">
                 <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
-                <h3>Выберите класс для тест-драйва</h3>
-                <div class="form__auto">
-                    <input type="button" name="radio__class" value="A-Class Hatchback">
-                    <input type="button" name="radio__class" value="A-Class Sedan">
-                    <input type="button" name="radio__class" value="C-Class">
-                    <input type="button" name="radio__class" value="CLA Coupe">
-                    <input type="button" name="radio__class" value="E-Class">
-                    <input type="button" name="radio__class" value="G-Class">
-                    <input type="button" name="radio__class" value="GLB-Class">
-                    <input type="button" name="radio__class" value="GLE-Class">
-                    <input type="button" name="radio__class" value="GLE Coupe">
-                    <input type="button" name="radio__class" value="S-Class">
-                    <input type="button" name="radio__class" value="V-Class">
-                </div>
-                <input type="submit" title="Send" class="btn-black" onclick="openForm()"></input>
-            </form>
-            
+                <label class="form__label">Нофелет</label>
+            </div>
+    
+            <h3>Выберите класс для тест-драйва</h3>
+            <div class="form__auto">
+                <input type="radio" id="radioAHatch" name="radioClassAuto" value="AHatch" checked>
+                <label for="radioAHatch">A-Class Hatchback</label>
 
-        </div>
+                <input type="radio" id="radioASedan" name="radioClassAuto" value="ASedan">
+                <label for="radioASedan">A-Class Sedan</label>
+
+                <input type="radio" id="radioC" name="radioClassAuto" value="C">
+                <label for="radioC">C-Class</label> 
+
+                <input type="radio" id="radioCLA" name="radioClassAuto" value="CLA">
+                <label for="radioCLA">CLA Coupe</label> 
+
+                <input type="radio" id="radioE" name="radioClassAuto" value="E">
+                <label for="radioE">E-Class</label> 
+
+                <input type="radio" id="radioG" name="radioClassAuto" value="G">
+                <label for="radioG">G-Class</label> 
+
+                <input type="radio" id="radioGLA" name="radioClassAuto" value="GLA">
+                <label for="radioGLA">GLA-Class</label> 
+
+                <input type="radio" id="radioGLB" name="radioClassAuto" value="GLB">
+                <label for="radioGLB">GLB-Class</label> 
+
+                <input type="radio" id="radioGLE" name="radioClassAuto" value="GLE">
+                <label for="radioGLE">GLE-Class</label> 
+
+                <input type="radio" id="radioGLECoupe" name="radioClassAuto" value="GLECoupe">
+                <label for="radioGLECoupe">GLE Coupe</label> 
+
+                <input type="radio" id="radioS" name="radioClassAuto" value="S">
+                <label for="radioS">S-Class</label> 
+
+                <input type="radio" id="radioV" name="radioClassAuto" value="V">
+                <label for="radioV">V-Class</label> 
+            </div>
+            <input type="submit" title="Send" class="btn-black" onclick="openForm()"></input>
+        </form>
     </main>
     <footer class="footer">
         <div class="container footer__container">

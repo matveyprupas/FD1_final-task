@@ -9,3 +9,21 @@
 .banner__gla {
   align-items: flex-start;
 }
+
+@media (max-width: 1290px) and (min-width: 768px) {
+}
+
+@media (max-width: 767px) {
+  .banner__container_gla {
+    padding: 0;
+  }
+
+  .banner__gla {
+    align-items: center;
+    padding: 32px 0 50px;
+  }
+
+  .banner .btn-black {
+    margin: 250px 0 0;
+  }
+}

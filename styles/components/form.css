@@ -78,11 +78,11 @@
   transform-origin: left top;
 }
 
-.form__label {
-  font-size: 0.75rem;
-  color: #a7b1bd;
-  opacity: 0;
-  /* text-align: left; */
+.form__input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .form__input {
@@ -92,8 +92,22 @@
   min-width: 280px;
   box-sizing: border-box;
   width: 100%;
-  margin: 0 0 24px;
+  margin: 20px 0 24px;
   /* height: 46px; */
+}
+
+.form__label {
+  font-size: 0.75rem;
+  color: #a7b1bd;
+  position: absolute;
+  /* top: -20px; */
+  left: 2px;
+  opacity: 0;
+  /* text-align: left; */
+}
+
+.form__input:focus ~ .form__label {
+  opacity: 1;
 }
 
 .-is-hidden {
