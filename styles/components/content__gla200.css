@@ -1,0 +1,17 @@
+.banner__gla200 {
+  display: flex;
+  justify-content: center;
+  min-height: 800px;
+  background-image: url(../../img/banner_gla200.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (max-width: 1290px) and (min-width: 768px) {
+  .banner__gla200 {
+    /* transform: scale(0.8); */
+  }
+}
+
+@media (max-width: 767px) {
+}
