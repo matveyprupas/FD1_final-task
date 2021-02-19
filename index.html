@@ -302,47 +302,47 @@
                 <h2>Авто в продаже</h2>
                 <div class="catalog__items">
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class hatchback">
-                        <img title="A-class hatchback" alt="A-class hatchback preview" src="./img/a-class_hatchback_preview.webp">
+                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/a-class_hatchback_preview.webp" class="lazy">
                         <h3>A-Class Hatchback</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class sedan">
-                        <img title="A-class sedan" alt="A-class hatchback preview" src="./img/a-class_sedan_preview.webp">
+                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/a-class_sedan_preview.webp" class="lazy">
                         <h3>A-Class Sedan</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="CLS-class">
-                        <img title="CLS-class" alt="A-class hatchback preview" src="./img/c-class_preview.webp">
+                        <img title="CLS-class" alt="A-class hatchback preview" data-src="./img/c-class_preview.webp" class="lazy">
                         <h3>C-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="CLA-class">
-                        <img title="CLA-class" alt="A-class hatchback preview" src="./img/cla-class_preview.webp">
+                        <img title="CLA-class" alt="A-class hatchback preview" data-src="./img/cla-class_preview.webp" class="lazy">
                         <h3>CLA Coupe</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="E-class">
-                        <img title="E-class" alt="A-class hatchback preview" src="./img/e-class_preview.webp">
+                        <img title="E-class" alt="A-class hatchback preview" data-src="./img/e-class_preview.webp" class="lazy">
                         <h3>E-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="GLE-class">
-                        <img title="GLE-class" alt="A-class hatchback preview" src="./img/g-class_preview.webp">
+                        <img title="GLE-class" alt="A-class hatchback preview" data-src="./img/g-class_preview.webp" class="lazy">
                         <h3>G-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class hatchback">
-                        <img title="A-class hatchback" alt="A-class hatchback preview" src="./img/glb-class_preview.webp">
+                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/glb-class_preview.webp" class="lazy">
                         <h3>GLB-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class sedan">
-                        <img title="A-class sedan" alt="A-class hatchback preview" src="./img/gle-class_preview.webp">
+                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/gle-class_preview.webp" class="lazy">
                         <h3>GLE-class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="B-class">
-                        <img title="B-class" alt="A-class hatchback preview" src="./img/gle-class_coupe_preview.webp">
+                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/gle-class_coupe_preview.webp" class="lazy">
                         <h3>GLE Coupe</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="C-class">
-                        <img title="C-class" alt="A-class hatchback preview" src="./img/s-class_preview.webp">
+                        <img title="C-class" alt="A-class hatchback preview" data-src="./img/s-class_preview.webp" class="lazy">
                         <h3>S-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="B-class">
-                        <img title="B-class" alt="A-class hatchback preview" src="./img/v-class_preview.webp">
+                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/v-class_preview.webp" class="lazy">
                         <h3>V-Class</h3>
                     </a>
                 </div>
@@ -478,5 +478,29 @@
         </div>
     </footer>
     <script src="./scripts/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
+    <script>
+        var lazyLoadInstances = [];
+
+        var initOneLazyLoad = function (catalog__item) {
+        // When the .catalog__item element enters the viewport,
+        // instantiate a new LazyLoad on the catalog__item
+        var oneLL = new LazyLoad({
+            container: catalog__item
+        });
+        // Optionally push it in the lazyLoadInstances
+        // array to keep track of the instances
+        lazyLoadInstances.push(oneLL);
+        };
+
+        // The "lazyLazy" instance of lazyload is used to check
+        // when the .catalog__item divs enter the viewport
+        var lazyLazy = new LazyLoad({
+        elements_selector: ".catalog__item",
+        callback_enter: initOneLazyLoad,
+        unobserve_entered: true // Stop observing .catalog__item(s) after they entered
+        });
+    </script>
+
 </body>
 </html>
