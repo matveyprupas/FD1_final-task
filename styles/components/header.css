@@ -1,5 +1,8 @@
-.header__container {
+.header {
   background: #070707;
+}
+
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;

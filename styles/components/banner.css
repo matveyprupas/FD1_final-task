@@ -5,6 +5,9 @@
   background-size: cover;
   background-position: bottom;
   position: relative;
+
+  padding: calc(100px - 1rem) 0 calc(180px - 1rem);
+  box-sizing: border-box;
 }
 
 .banner__container::before {

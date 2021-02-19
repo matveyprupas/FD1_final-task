@@ -4,6 +4,7 @@
 
 .banner__container_gla {
   background-image: url(../../img/banner_gla-page.webp);
+  background-position: center;
 }
 
 .banner__gla {
