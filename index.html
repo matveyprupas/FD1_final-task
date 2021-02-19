@@ -302,66 +302,66 @@
                 <h2>Авто в продаже</h2>
                 <div class="catalog__items">
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class hatchback">
-                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/a-class_hatchback_preview.webp" class="lazy" src="">
+                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/a-class_hatchback_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>A-Class Hatchback</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class sedan">
-                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/a-class_sedan_preview.webp" class="lazy" src="">
+                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/a-class_sedan_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>A-Class Sedan</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="CLS-class">
-                        <img title="CLS-class" alt="A-class hatchback preview" data-src="./img/c-class_preview.webp" class="lazy" src="">
+                        <img title="CLS-class" alt="A-class hatchback preview" data-src="./img/c-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>C-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="CLA-class">
-                        <img title="CLA-class" alt="A-class hatchback preview" data-src="./img/cla-class_preview.webp" class="lazy" src="">
+                        <img title="CLA-class" alt="A-class hatchback preview" data-src="./img/cla-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>CLA Coupe</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="E-class">
-                        <img title="E-class" alt="A-class hatchback preview" data-src="./img/e-class_preview.webp" class="lazy" src="">
+                        <img title="E-class" alt="A-class hatchback preview" data-src="./img/e-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>E-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="GLE-class">
-                        <img title="GLE-class" alt="A-class hatchback preview" data-src="./img/g-class_preview.webp" class="lazy" src="">
+                        <img title="GLE-class" alt="A-class hatchback preview" data-src="./img/g-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>G-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class hatchback">
-                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/glb-class_preview.webp" class="lazy" src="">
+                        <img title="A-class hatchback" alt="A-class hatchback preview" data-src="./img/glb-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>GLB-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="A-class sedan">
-                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/gle-class_preview.webp" class="lazy" src="">
+                        <img title="A-class sedan" alt="A-class hatchback preview" data-src="./img/gle-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>GLE-class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="B-class">
-                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/gle-class_coupe_preview.webp" class="lazy" src="">
+                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/gle-class_coupe_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>GLE Coupe</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="C-class">
-                        <img title="C-class" alt="A-class hatchback preview" data-src="./img/s-class_preview.webp" class="lazy" src="">
+                        <img title="C-class" alt="A-class hatchback preview" data-src="./img/s-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>S-Class</h3>
                     </a>
                     <a href="./catalog/gla/index.html" class="catalog__item" title="B-class">
-                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/v-class_preview.webp" class="lazy" src="">
+                        <img title="B-class" alt="A-class hatchback preview" data-src="./img/v-class_preview.webp" class="lazy" src="./img/dummy-image-440x230.webp">
                         <h3>V-Class</h3>
                     </a>
                 </div>
             </div>
         </div>
         <div class="shadow-block" onclick="openForm()"></div>
-        <form class="form">
+        <form class="form" action="https://fe.it-academy.by/TestForm.php" method="POST" data="">
             <a class="form__close" href="#" onclick="openForm()"><span></span><span></span></a>
             <h2>Заявка на тест-драйв</h2>
             <div class="form__input-container">
-                <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" required>
+                <input id="name__input" class="form__input" type="text" placeholder="Ваше имя*" onclick="hiddenLabel(this)" name="Name" required>
                 <label class="form__label">Ваше имя</label>
             </div>
             <div class="form__input-container">
-                <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)">
+                <input id="surname__input" class="form__input" type="text" placeholder="Фамилия" onclick="hiddenLabel(this)" name="Surname">
                 <label class="form__label">Фамилия</label>
             </div>
             <div class="form__input-container">
-                <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)" required>
+                <input id="phone__input" class="form__input" type="text" placeholder="Нофелет*" onclick="hiddenLabel(this)"  name="Phone number" value="+375" required>
                 <label class="form__label">Нофелет</label>
             </div>
     
@@ -403,7 +403,7 @@
                 <input type="radio" id="radioV" name="radioClassAuto" value="V">
                 <label for="radioV">V-Class</label> 
             </div>
-            <input type="submit" title="Send" class="btn-black" onclick="openForm()"></input>
+            <input type="submit" title="Send" class="btn-black"></input>
         </form>
     </main>
     <footer class="footer">
@@ -481,24 +481,16 @@
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.1/dist/lazyload.min.js"></script>
     <script>
         var lazyLoadInstances = [];
-
         var initOneLazyLoad = function (catalog__item) {
-        // When the .catalog__item element enters the viewport,
-        // instantiate a new LazyLoad on the catalog__item
         var oneLL = new LazyLoad({
             container: catalog__item
         });
-        // Optionally push it in the lazyLoadInstances
-        // array to keep track of the instances
         lazyLoadInstances.push(oneLL);
         };
-
-        // The "lazyLazy" instance of lazyload is used to check
-        // when the .catalog__item divs enter the viewport
         var lazyLazy = new LazyLoad({
         elements_selector: ".catalog__item",
         callback_enter: initOneLazyLoad,
-        unobserve_entered: true // Stop observing .catalog__item(s) after they entered
+        unobserve_entered: true 
         });
     </script>
 
